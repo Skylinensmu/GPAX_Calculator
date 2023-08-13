@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Grade Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<H1>Grade Calculator Program</H1>
+<section class="section1">
+    <div class="subject_container">
+        <p>Your Grade</p>
+        <input type="number" placeholder="Thai Grade" class="input" id="thai" onkeyup="Checksubject_value()">
+        <input type="number" placeholder="Math Grade" class="input" id="math" onkeyup="Checksubject_value()">
+        <input type="number" placeholder="English Grade" class="input" id="english" onkeyup="Checksubject_value()">
+        <input type="number" placeholder="Social Grade" class="input" id="social" onkeyup="Checksubject_value()">
+        <input type="number" placeholder="Scient Grade" class="input" id="sci" onkeyup="Checksubject_value()">
+    </div> 
+    <div class="weight_subject">
+        <p>Subject Credit</p>
+        <input type="number" min="1" max="4" value="2" placeholder="Credit" class="input" id="wight_thai" >
+        <input type="number" min="1" max="4" value="2" placeholder="Credit" class="input" id="wight_math">
+        <input type="number" min="1" max="4" value="2" placeholder="Credit" class="input" id="wight_english">
+        <input type="number" min="1" max="4" value="2" placeholder="Credit" class="input" id="wight_social">
+        <input type="number" min="1" max="4" value="2" placeholder="Credit" class="input" id="wight_sci">
+    </div><br>
+    
+</section>
+<div id="Grade"></div>
+    <div class="button_container">
+        <button type="button" onclick="calculate()" id="calculatebutton">Click For Calculate</button>
+        <button type="button" onclick="Clear()" id="clearbutton">Clear The value</button>
+    </div>
+    <footer>
+        <p>&copy; 2023 SkylineNSMU. All rights reserved.</p>
+    </footer> 
+</body>
+
+</html>
